@@ -300,11 +300,11 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-// function getSumOfDigits(num) {
-//   let sumDigits = 0;
-//   const str = String(num);
-//   let copyNum = num;
-//   for (let i = 0; i < str.length; i += 1) {
+function getSumOfDigits(num) {
+  let sumDigits = 0;
+  const str = String(num);
+  let copyNum = num;
+  for (let i = 0; i < str.length; i += 1) {
     sumDigits += copyNum % 10;
     copyNum = Math.floor(copyNum / 10);
   }
@@ -322,11 +322,11 @@ function getSumToN(n) {
  *   16  => true
  *   15  => false
  */
-// function isPowerOfTwo(num) {
-//   for (let i = 0; i < num; i += 1) {
-//     if (num === 2 ** i) {
-//       return true;
-//     }
+function isPowerOfTwo(num) {
+  for (let i = 0; i < num; i += 1) {
+    if (num === 2 ** i) {
+      return true;
+    }
   }
   return false;
 }
@@ -636,8 +636,8 @@ function getHypotenuse(a, b) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers(number) {
-  let count = 0;
+// function getCountOfOddNumbers(number) {
+//   let count = 0;
   for (let i = 0; i <= Math.abs(number); i += 1) {
     if (i % 2 !== 0) {
       count += 1;
